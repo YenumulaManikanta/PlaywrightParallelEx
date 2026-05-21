@@ -1,0 +1,11 @@
+<suite name="Suite" parallel="classes" thread-count="3">
+
+  <test name="ParallelTests">
+    <classes>
+      <class name="com.playwright.tests.LoginTest"/>
+      <class name="com.playwright.tests.BasicTest"/>
+      <class name="com.playwright.tests.UserTest"/>
+    </classes>
+  </test>
+
+</suite>
