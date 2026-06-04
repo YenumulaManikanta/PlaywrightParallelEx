@@ -9,7 +9,6 @@ public class UserTest extends BaseTest{
 	@Test
 	public void baseTest() {
 		page.navigate("https://github.com");
-		page.waitForTimeout(3000);
 	    System.out.println("User Test: " + Thread.currentThread().getId());
 
 	}
