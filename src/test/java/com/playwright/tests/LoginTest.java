@@ -4,10 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.playwright.base.BaseTest;
+import com.playwright.utils.RetryAnalyzer;
 
 public class LoginTest extends BaseTest{
 	
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void loginTest() {
 
 	    page.navigate("https://www.discover.com/");

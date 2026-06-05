@@ -7,5 +7,15 @@
       <class name="com.playwright.tests.UserTest"/>
     </classes>
   </test>
+  <suite name="Suite">
+    <listeners>
+        <listener class-name="com.playwright.utils.RetryListener"/>
+    </listeners>
+</suite>
+<suite name="Suite">
+    <listeners>
+        <!-- disable default jq reporter -->
+    </listeners>
+</suite>
 
 </suite>
